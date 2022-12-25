@@ -1,0 +1,12 @@
+.list {
+    list-style-type: none;
+    counter-reset: new-counter;
+  }
+  .list__item {
+    counter-increment: new-counter;
+  }
+  
+  .list__item::before {
+    content: counter(new-counter) ") ";
+  }
+  
